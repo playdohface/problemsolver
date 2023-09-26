@@ -9,7 +9,6 @@ export class AppController {
   @Render('index')
   root() {
     return {
-      message: 'Hello!',
       calculations: this.calculationService.getAll(),
     };
   }
